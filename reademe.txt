@@ -1,0 +1,4 @@
+Olá, bem vindo ao meu portifólio! Bom, este é apenas o README rs
+Fique a vontade para visualizar meus projetos que realizei ao longo da minha trajetória como aprendiz de Desenvolvimento Front-End. 
+Como todo aprendiz, nem todos os resultados são perfeitos, talvez nenhum seja, mas mostram meu desenvolvimeto.
+Todos os projetos são fruto de tarefas de cursos (Alura), ou de desafios (Frontend Mentor e Codante). 
