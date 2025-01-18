@@ -133,6 +133,10 @@ main {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  color: var(--cor-clara);
+  text-decoration: none;
+  font-family: var(--fonte-titulo);
+  font-size: 2rem;
 }
 .card-projeto:hover {
   background-color: var(--cor-hover-1);
@@ -147,6 +151,30 @@ main {
   border-radius: 8px;
   border: solid 1px var(--cor-escura);
 }
+.descricao-projeto {
+  text-align: justify;
+  font-size: 1.25rem;
+  color: var(--cor-clara);
+  font-family: var(--fonte-texto);
+}
+.descricao-projeto a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: var(--cor-hover-2);
+}
+.container-tag{
+  display: flex;
+  gap: 0.5rem;
+}
+
+.tag-projeto {
+  font-size: 1.25rem;
+  color: var(--cor-clara);
+  font-family: var(--fonte-texto);
+  background-color: var(--cor-media);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
 @media (max-width: 1200px) {
   main {
     flex-direction: column;
@@ -158,9 +186,19 @@ main {
     background-color: var(--cor-hover-2);
     box-shadow: 5px 10px rgb(74, 53, 190);
   }
-}
-@media (max-width: 950px) {
+}  
+@media (max-width: 1000px) {
+  body{
+    width: 950px;
+  }
+  header{
+    width: fit-content;
+  }
+  header a{
+    width: fit-content;
+  }
   main {
+    width: 100%;
     flex-direction: column;
   }
   .container-sobre {
@@ -170,4 +208,5 @@ main {
     background-color: var(--cor-hover-2);
     box-shadow: 5px 10px rgb(74, 53, 190);
   }
+  
 }
