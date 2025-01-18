@@ -159,3 +159,15 @@ main {
     box-shadow: 5px 10px rgb(74, 53, 190);
   }
 }
+@media (max-width: 950px) {
+  main {
+    flex-direction: column;
+  }
+  .container-sobre {
+    width: 100%;
+  }
+  .card-projeto:hover {
+    background-color: var(--cor-hover-2);
+    box-shadow: 5px 10px rgb(74, 53, 190);
+  }
+}
