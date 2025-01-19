@@ -175,38 +175,25 @@ main {
   padding: 0.5rem;
   border-radius: 0.5rem;
 }
-@media (max-width: 1200px) {
+@media (max-width: 950px) {
   main {
     flex-direction: column;
   }
-  .container-sobre {
-    width: 100%;
+  .container-projeto {
+    display: flex;
+    flex-direction: column; /* Todos os itens em uma única coluna */
   }
-  .card-projeto:hover {
-    background-color: var(--cor-hover-2);
-    box-shadow: 5px 10px rgb(74, 53, 190);
-  }
-}  
-@media (max-width: 1000px) {
-  body{
-    width: 950px;
-  }
-  header{
-    width: fit-content;
-  }
-  header a{
-    width: fit-content;
-  }
-  main {
-    width: 100%;
-    flex-direction: column;
-  }
-  .container-sobre {
-    width: 100%;
-  }
-  .card-projeto:hover {
-    background-color: var(--cor-hover-2);
-    box-shadow: 5px 10px rgb(74, 53, 190);
-  }
-  
 }
+
+/* Largura entre 951px e 1200px */
+@media (min-width: 951px)  {
+  main {
+    flex-direction: column;
+  }
+  .container-projeto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+    gap: 16px; /* Espaçamento entre os itens (ajuste conforme necessário) */
+  }
+}
+
