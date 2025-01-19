@@ -28,6 +28,10 @@ header {
   gap: 3rem;
   font-family: var(--fonte-titulo);
 }
+nav {
+  display: flex;
+  gap: 3rem;
+}
 header a {
   text-decoration: none;
   font-size: 4rem;
