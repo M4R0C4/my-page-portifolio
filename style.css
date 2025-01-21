@@ -48,6 +48,10 @@ main {
   padding: 2.75rem;
   border-radius: 1.25rem;
 }
+.titulo-portifolio {
+  font-family: var(--fonte-texto);
+  font-size: 2rem;
+}
 .container-perfil {
   display: flex;
   flex-direction: column;
