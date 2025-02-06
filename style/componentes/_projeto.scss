@@ -1,0 +1,49 @@
+@use '../abs/variaveis';
+@use '../abs/mixins';
+
+.projetos__container{
+    @include mixins.centralizar(80%);
+    .projetos__local{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .projetos__item{
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 30%;
+            list-style: none;
+            margin: 2rem 0;
+            background-color: variaveis.$cor-fonte-clara;
+            border-radius: 30px;
+            padding: 1rem;
+            gap:1rem;
+            .projeto-img{
+                width: 50%;
+                height: auto;
+            }
+            h3{
+                @include mixins.estilo-fonte(1.5rem, 600, variaveis.$fonte-texto, variaveis.$cor-fonte-escura);
+                text-align: center;
+                margin-top: 0.5rem;
+            }
+            p{
+                @include mixins.estilo-fonte(1rem, 400, variaveis.$fonte-texto, variaveis.$cor-fonte-escura);
+            }
+            a{
+                @include mixins.estilo-fonte(1rem, 400, variaveis.$fonte-texto, variaveis.$cor-fonte-escura);
+                text-decoration: none;
+                transition: 0.3s;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap:.5em;
+                img{
+                    width: 20px;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

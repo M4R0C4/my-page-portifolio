@@ -1,5 +1,12 @@
-
+@use '../componentes/header';
+@use '../componentes/main';
+@use '../componentes/sobremim';
 @use '../abs/variaveis';
+@use '../componentes/projeto';
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     background:variaveis.$gradiente-primario;
     background-repeat: no-repeat;

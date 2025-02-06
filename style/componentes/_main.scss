@@ -1,0 +1,29 @@
+@use '../abs/mixins';
+@use '../abs/variaveis';
+
+main{
+    section{
+        @include mixins.centralizar(80%);
+        text-align: center;
+        h1{
+            @include mixins.estilo-fonte(3rem, bolder, variaveis.$fonte-titulo, variaveis.$cor-fonte-escura);
+            margin-bottom: 1rem;
+        }
+        h2{
+            margin-bottom: 1rem;
+            @include mixins.estilo-fonte(1.5rem, 600, variaveis.$fonte-texto, variaveis.$cor-fonte-escura);
+        }
+        span{
+            display: inline-flex;
+            justify-content: center;
+            width: 80%;
+            border:1px solid variaveis.$cor-fonte-escura;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+    }
+}
