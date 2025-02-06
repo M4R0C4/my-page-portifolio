@@ -1,0 +1,6 @@
+
+@use '../abs/variaveis';
+body{
+    background:variaveis.$gradiente-primario;
+    background-repeat: no-repeat;
+}
