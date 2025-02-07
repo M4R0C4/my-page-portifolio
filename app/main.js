@@ -17,8 +17,8 @@ function exibirOsProjetosNaPagina(arrayProjetos){
         <h3 class="projeto-nome">${projeto.name}</h3>
         <p class="projeto-descricao">${projeto.description}</p>
         <span class="linha"></span>
-        <a href="${projeto.clone_url}" class="veja-projeto"><img src="./assets/ferramentas/logo_vercel_icon.svg" alt="">Veja o projeto</a>
         <a href="${projeto.homepage}" class="veja-codigo"><img src="./assets/contatos/github_logo_icon.svg" alt="">Veja o código</a>
+        <a href="${projeto.clone_url}" class="veja-projeto"><img src="./assets/ferramentas/logo_vercel_icon.svg" alt="">Veja o projeto</a>
       </div>
     `
   })

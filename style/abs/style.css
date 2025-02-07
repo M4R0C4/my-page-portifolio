@@ -215,6 +215,7 @@ main section a {
   justify-content: center;
   align-items: center;
   gap: 0.2em;
+  padding: 1rem 0;
 }
 .projetos__container .projetos__local .projetos__item a img {
   width: 20px;
