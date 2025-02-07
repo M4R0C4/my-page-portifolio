@@ -6,9 +6,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .linguagens__titulo{
+        @include mixins.estilo-fonte(2rem, 400, variaveis.$fonte-titulo, variaveis.$cor-fonte-escura);
+    }
     .linguagens__lista{
         display: flex;
         width: 50%;
+        gap: 2rem;
         li{
             img{
                 width: 100px;
@@ -21,8 +25,12 @@
         flex-direction: column;
         align-items: center;
         width: 50%;
+        .tecnologias__titulo{
+            @include mixins.estilo-fonte(2rem, 400, variaveis.$fonte-titulo, variaveis.$cor-fonte-escura);
+        }
         ul{
             display: flex;
+            gap: 2rem;
             li{
                 img{
                     width: 100px;

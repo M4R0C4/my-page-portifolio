@@ -19,19 +19,20 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                @include mixins.estilo-fonte(1.5rem, 400, variaveis.$fonte-texto, variaveis.$cor-fonte-escura);
+                @include mixins.estilo-fonte(2rem, 400, variaveis.$fonte-texto, variaveis.$cor-fonte-escura);
                 img{
-                    width: 20px;
-                    height: 20px;
+                    width: 40px;
+                    height: 40px;
                 }
             }
             p{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                @include mixins.estilo-fonte(2rem, 400, variaveis.$fonte-texto, variaveis.$cor-fonte-escura);
                 img{
-                    width: 20px;
-                    height: 20px;
+                    width: 40px;
+                    height: 40px;
                 }
                 }
         }

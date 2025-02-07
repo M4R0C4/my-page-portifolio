@@ -172,9 +172,16 @@ main section a {
   justify-content: space-between;
   align-items: center;
 }
+.habilidades__container .linguagens__titulo {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Krona One", sans-serif;
+  color: #1e231c;
+}
 .habilidades__container .linguagens__lista {
   display: flex;
   width: 50%;
+  gap: 2rem;
 }
 .habilidades__container .linguagens__lista li img {
   width: 100px;
@@ -186,8 +193,15 @@ main section a {
   align-items: center;
   width: 50%;
 }
+.habilidades__container .tecnologias .tecnologias__titulo {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Krona One", sans-serif;
+  color: #1e231c;
+}
 .habilidades__container .tecnologias ul {
   display: flex;
+  gap: 2rem;
 }
 .habilidades__container .tecnologias ul li img {
   width: 100px;
@@ -217,27 +231,49 @@ main section a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
   color: #1e231c;
 }
 .contato__container ul li a img {
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
 }
 .contato__container ul li p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  color: #1e231c;
 }
 .contato__container ul li p img {
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
 }
 
 h1 {
   margin-top: 1rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+footer .linha {
+  width: 80%;
+  border: 0.5px solid rgba(128, 128, 128, 0.478);
+}
+footer p {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  color: #1e231c;
 }
 
 * {
