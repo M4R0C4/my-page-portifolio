@@ -38,7 +38,7 @@ header{
             gap:1rem;
             li{
                 a{
-                    @include mixins.estilo-fonte(.7rem,500,variaveis.$fonte-titulo,variaveis.$cor-fonte-escura);
+                    @include mixins.estilo-fonte(1rem,500,variaveis.$fonte-titulo,variaveis.$cor-fonte-escura);
                     &:hover{
                     color: variaveis.$cor-fonte-clara;
                  }
