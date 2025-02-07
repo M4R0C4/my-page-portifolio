@@ -15,3 +15,10 @@ footer{
         @include mixins.estilo-fonte(2rem, 400, variaveis.$fonte-texto, variaveis.$cor-fonte-escura);
     }
 }
+@media screen and (max-width: 1254px){
+    footer{
+        p{
+            @include mixins.estilo-fonte(0.5rem, 400, variaveis.$fonte-texto, variaveis.$cor-fonte-escura);
+        }
+    }
+}

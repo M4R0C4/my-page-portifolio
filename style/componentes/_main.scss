@@ -6,12 +6,13 @@ main{
         @include mixins.centralizar(80%);
         text-align: center;
         h1{
-            @include mixins.estilo-fonte(3rem, bolder, variaveis.$fonte-titulo, variaveis.$cor-fonte-escura);
+            @include mixins.estilo-fonte(2rem, bolder, variaveis.$fonte-titulo, variaveis.$cor-fonte-escura);
+
             margin-bottom: 1rem;
         }
         h2{
             margin-bottom: 1rem;
-            @include mixins.estilo-fonte(1.5rem, 600, variaveis.$fonte-texto, variaveis.$cor-fonte-escura);
+            @include mixins.estilo-fonte(1rem, 600, variaveis.$fonte-texto, variaveis.$cor-fonte-escura);
         }
         span{
             display: inline-flex;
@@ -24,6 +25,14 @@ main{
         }
         a{
             text-decoration: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1254px){
+    main{
+        section{
+            padding: 2rem 0;
         }
     }
 }

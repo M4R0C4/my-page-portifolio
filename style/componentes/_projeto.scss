@@ -54,10 +54,20 @@
         }
     }
     .projeto__descricao{
-        padding: 2rem 0;
+        padding-top: 2rem;
         p{
             text-align: justify;
             @include mixins.estilo-fonte(2rem, 500, variaveis.$fonte-texto, variaveis.$cor-fonte-escura)
+        }
+    }
+}
+
+@media screen and (max-width: 1254px) {
+    .projetos__container{
+        .projeto__descricao{
+            p{
+                @include mixins.estilo-fonte(1rem, 400, variaveis.$fonte-texto,variaveis.$cor-fonte-escura);
+            }
         }
     }
 }
