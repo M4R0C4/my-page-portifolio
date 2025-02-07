@@ -1,0 +1,43 @@
+@use '../abs/mixins';
+@use '../abs/variaveis';
+
+.contato__container{
+    @include mixins.centralizar(80%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        li{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a{
+                text-decoration: none;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                @include mixins.estilo-fonte(1.5rem, 400, variaveis.$fonte-texto, variaveis.$cor-fonte-escura);
+                img{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            p{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img{
+                    width: 20px;
+                    height: 20px;
+                }
+                }
+        }
+    }
+
+}
+h1{
+    margin-top: 1rem;
+}

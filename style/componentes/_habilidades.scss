@@ -1,0 +1,34 @@
+@use '../abs/variaveis';
+@use '../abs/mixins';
+
+.habilidades__container{
+    @include mixins.centralizar(80%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .linguagens__lista{
+        display: flex;
+        width: 50%;
+        li{
+            img{
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+    .tecnologias{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        ul{
+            display: flex;
+            li{
+                img{
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        }
+    }
+}
