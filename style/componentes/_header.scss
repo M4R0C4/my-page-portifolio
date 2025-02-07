@@ -23,6 +23,9 @@ header{
             a{
                 text-decoration: none;
                 @include mixins.estilo-fonte(2rem, 400, variaveis.$fonte-titulo, variaveis.$cor-fonte-escura);
+                &:hover{
+                    @include mixins.estilo-fonte(2rem, 600, variaveis.$fonte-titulo, variaveis.$cor-fonte-clara);
+                }
             }
         }
     }

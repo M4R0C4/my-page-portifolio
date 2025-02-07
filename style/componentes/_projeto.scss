@@ -2,48 +2,62 @@
 @use '../abs/mixins';
 
 .projetos__container{
-    @include mixins.centralizar(80%);
+    width: 100%;
     .projetos__local{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        overflow-x: scroll;
+        overflow-y: hidden;
         .projetos__item{
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 30%;
+            width: 13rem;
+            height: 30rem;
             list-style: none;
-            margin: 2rem 0;
             background-color: variaveis.$cor-fonte-clara;
             border-radius: 30px;
-            padding: 1rem;
-            gap:1rem;
+            align-content: center;
+            padding: 0 2rem;
+            
+            &:hover{
+                box-shadow: 11px 12px 0px 0px variaveis.$cor-fonte-escura;
+                -webkit-box-shadow: 11px 12px 0px 0px variaveis.$cor-fonte-escura;
+                -moz-box-shadow: 11px 12px 0px 0px variaveis.$cor-fonte-escura;
+            }
             .projeto-img{
                 width: 50%;
                 height: auto;
             }
             h3{
                 @include mixins.estilo-fonte(1.5rem, 600, variaveis.$fonte-texto, variaveis.$cor-fonte-escura);
+                text-transform: uppercase;
                 text-align: center;
-                margin-top: 0.5rem;
+                margin: 3rem 0;
             }
             p{
                 @include mixins.estilo-fonte(1rem, 400, variaveis.$fonte-texto, variaveis.$cor-fonte-escura);
+                margin-bottom: 3rem;
             }
             a{
-                @include mixins.estilo-fonte(1rem, 400, variaveis.$fonte-texto, variaveis.$cor-fonte-escura);
+                @include mixins.estilo-fonte(1.2rem, 500, variaveis.$fonte-texto, variaveis.$cor-fonte-escura);
                 text-decoration: none;
                 transition: 0.3s;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                gap:.5em;
+                gap:.2em;
                 img{
                     width: 20px;
                     height: auto;
                 }
             }
+        }
+    }
+    .projeto__descricao{
+        padding: 2rem 0;
+        p{
+            text-align: justify;
+            @include mixins.estilo-fonte(2rem, 500, variaveis.$fonte-texto, variaveis.$cor-fonte-escura)
         }
     }
 }

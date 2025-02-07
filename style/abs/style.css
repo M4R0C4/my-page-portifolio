@@ -31,6 +31,12 @@ header ul li a {
   font-family: "Krona One", sans-serif;
   color: #1e231c;
 }
+header ul li a:hover {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Krona One", sans-serif;
+  color: #ececbb;
+}
 
 main section {
   width: 80%;
@@ -108,26 +114,29 @@ main section a {
 }
 
 .projetos__container {
-  width: 80%;
-  margin: 0 auto;
-  padding: 4rem 0;
+  width: 100%;
 }
 .projetos__container .projetos__local {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 .projetos__container .projetos__local .projetos__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 30%;
+  width: 13rem;
+  height: 30rem;
   list-style: none;
-  margin: 2rem 0;
   background-color: #ececbb;
   border-radius: 30px;
-  padding: 1rem;
-  gap: 1rem;
+  align-content: center;
+  padding: 0 2rem;
+}
+.projetos__container .projetos__local .projetos__item:hover {
+  box-shadow: 11px 12px 0px 0px #1e231c;
+  -webkit-box-shadow: 11px 12px 0px 0px #1e231c;
+  -moz-box-shadow: 11px 12px 0px 0px #1e231c;
 }
 .projetos__container .projetos__local .projetos__item .projeto-img {
   width: 50%;
@@ -138,18 +147,20 @@ main section a {
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
   color: #1e231c;
+  text-transform: uppercase;
   text-align: center;
-  margin-top: 0.5rem;
+  margin: 3rem 0;
 }
 .projetos__container .projetos__local .projetos__item p {
   font-size: 1rem;
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
   color: #1e231c;
+  margin-bottom: 3rem;
 }
 .projetos__container .projetos__local .projetos__item a {
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: 1.2rem;
+  font-weight: 500;
   font-family: "Montserrat", sans-serif;
   color: #1e231c;
   text-decoration: none;
@@ -157,11 +168,21 @@ main section a {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.5em;
+  gap: 0.2em;
 }
 .projetos__container .projetos__local .projetos__item a img {
   width: 20px;
   height: auto;
+}
+.projetos__container .projeto__descricao {
+  padding: 2rem 0;
+}
+.projetos__container .projeto__descricao p {
+  text-align: justify;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  color: #1e231c;
 }
 
 .habilidades__container {
