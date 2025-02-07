@@ -49,10 +49,10 @@ h1{
         ul{
             li{
                 a{
-                    @include mixins.estilo-fonte(1rem, 400, variaveis.$fonte-texto, variaveis.$cor-fonte-escura);
+                    @include mixins.estilo-fonte(1.2rem, 400, variaveis.$fonte-texto, variaveis.$cor-fonte-escura);
                 }
                 p{
-                    @include mixins.estilo-fonte(1rem, 400, variaveis.$fonte-texto, variaveis.$cor-fonte-escura);
+                    @include mixins.estilo-fonte(1.2rem, 400, variaveis.$fonte-texto, variaveis.$cor-fonte-escura);
                 }
             }
         }
