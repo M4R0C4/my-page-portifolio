@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans&display=swap');
-
+@import url("./hover.css");
 $primary-color: #a26769; // terracota suave
 $secondary-color: #d5b9b2; // areia quente
 $accent-color: #9c9583; // oliva acinzentado
@@ -18,7 +18,7 @@ body {
   max-width: 900px;
   margin: 0 auto;
   padding: 2rem;
-  img{
+  .profile-pic{
     border-radius: 50%;
     width: 200px;
     height: 200px;  
@@ -30,7 +30,24 @@ body {
   background-color: $primary-color;
   color: white;
   text-align: center;
-  padding: 4rem 2rem;
+  nav{
+    ul{
+      list-style-type: none;
+      margin: 0;
+      padding: 1rem 0;
+      li{
+        display: inline-block;
+        margin-right: 1rem;
+        a{
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+          border-radius: 4rem;
+          padding: 1rem;
+        }
+      }
+    }
+  }
 
   h1 {
     font-family: 'Montserrat', sans-serif;
@@ -45,6 +62,7 @@ body {
 }
 
 .about {
+  padding: 4rem 2rem;
   h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.8rem;
@@ -54,19 +72,28 @@ body {
   p {
     font-size: 1rem;
     line-height: 1.6;
+    span{
+      font-weight: bold;
+    }
   }
 
   .skills {
     margin-top: 1rem;
-
     span {
-      display: inline-block;
+      display: inline-flex;
       background-color: $secondary-color;
       color: $text-color;
       padding: 0.5rem 1rem;
       border-radius: 20px;
       margin: 0.3rem;
+      gap: 0.5rem;
       font-size: 0.9rem;
+      flex-direction: column;
+      align-items: center;
+      #javascript-icon,#json-icon,#sass-icon,#html-icon,#github-icon{
+        width: 30px;
+        height: 30px;
+      }
     }
   }
 }
@@ -77,34 +104,32 @@ body {
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
   }
-
-  .project-card {
-    background-color: white;
-    border: 1px solid $accent-color;
-    border-radius: 12px;
-    padding: 1rem 1.5rem;
-    margin-bottom: 1.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-
-    h3 {
-      margin-top: 0;
-      color: $primary-color;
-    }
-
-    p {
-      margin: 0.5rem 0 1rem;
-    }
-
-    a {
-      display: inline-block;
-      margin-right: 1rem;
-      color: $primary-color;
-      text-decoration: none;
-      font-weight: bold;
-      border-bottom: 1px solid transparent;
-
-      &:hover {
-        border-color: $primary-color;
+  .project-card-container{
+    .project-card {
+      background-color: white;
+      border: 1px solid $accent-color;
+      border-radius: 12px;
+      padding: 1rem 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      h3 {
+        margin-top: 0;
+        color: $primary-color;
+      }
+      p {
+        margin: 0.5rem 0 1rem;
+      }
+      a {
+        display: inline-block;
+        margin-right: 1rem;
+        color: $primary-color;
+        text-decoration: none;
+        font-weight: bold;
+        border-bottom: 1px solid transparent;
+  
+        &:hover {
+          border-color: $primary-color;
+        }
       }
     }
   }
@@ -146,4 +171,33 @@ footer {
   background-color: $accent-color;
   color: white;
   font-size: 0.9rem;
+}
+
+@media screen and (min-width: 600px) {
+  .about{
+    .skills{
+      display: flex;
+      justify-content: center;
+      padding: 2rem;
+      span{
+        opacity: .7;
+      }
+      span:hover{
+        font-weight: bold;
+        opacity: 1;
+      }
+    }
+  }
+  .projects{
+      .project-card-container{
+          display: inline-flex;
+          gap: 1rem;
+          #project-img{
+            display: block;
+            width: 20%;
+            height: 20%;
+          }
+      }
+  }
+  
 }

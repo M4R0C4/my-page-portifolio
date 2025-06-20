@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans&display=swap");
+@import url("./hover.css");
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
@@ -12,7 +13,7 @@ body {
   margin: 0 auto;
   padding: 2rem;
 }
-.container img {
+.container .profile-pic {
   border-radius: 50%;
   width: 200px;
   height: 200px;
@@ -23,7 +24,22 @@ body {
   background-color: #a26769;
   color: white;
   text-align: center;
-  padding: 4rem 2rem;
+}
+.hero nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 1rem 0;
+}
+.hero nav ul li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+.hero nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4rem;
+  padding: 1rem;
 }
 .hero h1 {
   font-family: "Montserrat", sans-serif;
@@ -35,6 +51,9 @@ body {
   font-style: italic;
 }
 
+.about {
+  padding: 4rem 2rem;
+}
 .about h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 1.8rem;
@@ -44,17 +63,27 @@ body {
   font-size: 1rem;
   line-height: 1.6;
 }
+.about p span {
+  font-weight: bold;
+}
 .about .skills {
   margin-top: 1rem;
 }
 .about .skills span {
-  display: inline-block;
+  display: inline-flex;
   background-color: #d5b9b2;
   color: #3e3e3e;
   padding: 0.5rem 1rem;
   border-radius: 20px;
   margin: 0.3rem;
+  gap: 0.5rem;
   font-size: 0.9rem;
+  flex-direction: column;
+  align-items: center;
+}
+.about .skills span #javascript-icon, .about .skills span #json-icon, .about .skills span #sass-icon, .about .skills span #html-icon, .about .skills span #github-icon {
+  width: 30px;
+  height: 30px;
 }
 
 .projects h2 {
@@ -62,7 +91,7 @@ body {
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
 }
-.projects .project-card {
+.projects .project-card-container .project-card {
   background-color: white;
   border: 1px solid #9c9583;
   border-radius: 12px;
@@ -70,14 +99,14 @@ body {
   margin-bottom: 1.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
-.projects .project-card h3 {
+.projects .project-card-container .project-card h3 {
   margin-top: 0;
   color: #a26769;
 }
-.projects .project-card p {
+.projects .project-card-container .project-card p {
   margin: 0.5rem 0 1rem;
 }
-.projects .project-card a {
+.projects .project-card-container .project-card a {
   display: inline-block;
   margin-right: 1rem;
   color: #a26769;
@@ -85,7 +114,7 @@ body {
   font-weight: bold;
   border-bottom: 1px solid transparent;
 }
-.projects .project-card a:hover {
+.projects .project-card-container .project-card a:hover {
   border-color: #a26769;
 }
 
@@ -121,4 +150,28 @@ footer {
   background-color: #9c9583;
   color: white;
   font-size: 0.9rem;
+}
+
+@media screen and (min-width: 600px) {
+  .about .skills {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+  }
+  .about .skills span {
+    opacity: 0.7;
+  }
+  .about .skills span:hover {
+    font-weight: bold;
+    opacity: 1;
+  }
+  .projects .project-card-container {
+    display: inline-flex;
+    gap: 1rem;
+  }
+  .projects .project-card-container #project-img {
+    display: block;
+    width: 20%;
+    height: 20%;
+  }
 }/*# sourceMappingURL=style.css.map */
