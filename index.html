@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Desenvolvedora Front-End  Junior com especialização em HTML5, SCSS e design responsivo. Transformando ideias em experiências digitais.">
+  <meta name="description"
+    content="Desenvolvedora Front-End  Junior com especialização em HTML5, SCSS e design responsivo. Transformando ideias em experiências digitais." />
   <title>Mariana Cândido - Soluções Digitais | Desenvolvedora Web</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="yourpath/all-animation.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./style/style.css" />
 </head>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0GQS30QL1P"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
 
-  gtag('config', 'G-0GQS30QL1P');
+  gtag("config", "G-0GQS30QL1P");
 </script>
 
 <body>
@@ -35,28 +40,42 @@
         <li><a href="#contact" class="hvr-radial-out">Contato</a></li>
       </ul>
     </nav>
-    <div class="container">
-        <img src="./me.jpg" class="profile-pic" alt="Mariana Candido">
-      <h1 class="nome">Mariana Cândido</h1>
-      <h2 class="animate__animated animate__zoomInDown">Transformo ideias em experiências digitais</h2>
+    <div class="container hero-content">
+      <img src="./img/me.jpg" class="profile-pic" alt="Mariana Candido" />
+      <h1 class="nome">Olá, sou Mariana Cândido</h1>
+      <h2 class="animate__animated animate__zoomInDown">
+        Transformo ideias em experiências digitais
+      </h2>
     </div>
   </header>
 
   <section class="about container" id="about">
-    <h2 >Sobre Mim</h2>
-    <p>Desenvolvedora Front-End desde 2024, com foco em <span>HTML5</span>, <span>SaSS</span>, <span>JavaScript</span> e design responsivo. Tenho formação em Física e especialização em Neuropsicopedagogia. Estou em transição de carreira e pronta para colaborar com projetos que fazem a diferença.</p>
+    <h2>Sobre Mim</h2>
+    <p>
+      Desenvolvedora Front-End desde 2024, com foco em <span>HTML5</span>,
+      <span>SaSS</span>, <span>JavaScript</span> e design responsivo. Tenho
+      formação em Física e especialização em Neuropsicopedagogia. Estou em
+      transição de carreira e pronta para colaborar com projetos que fazem a
+      diferença.
+    </p>
     <div class="skills">
-      <span>HTML5 <img src="./icons/html-5.svg" alt="html5 icon" id="html-icon" class="hvr-grow"></span>
-      <span>SASS <img src="./icons/sass.svg" alt="sass icon" id="sass-icon" class="hvr-grow"></span>
-      <span>JavaScript <img src="./icons/javascript.svg" alt="javascript icon" id="javascript-icon" class="hvr-grow"></span>
-      <span>JSON <img src="./icons/json-icon.svg" alt="json-icon" id="json-icon" class="hvr-grow"></span>
-      <span>GitHub <img src="./icons/git.svg" alt="github icon" id="github-icon" class="hvr-grow"></span>
+      <span>HTML5
+        <img src="./icons/html-5.svg" alt="html5 icon" id="html-icon" class="hvr-grow" /></span>
+      <span>SASS
+        <img src="./icons/sass.svg" alt="sass icon" id="sass-icon" class="hvr-grow" /></span>
+      <span>JavaScript
+        <img src="./icons/javascript.svg" alt="javascript icon" id="javascript-icon" class="hvr-grow" /></span>
+      <span>JSON
+        <img src="./icons/json-icon.svg" alt="json-icon" id="json-icon" class="hvr-grow" /></span>
+      <span>GitHub
+        <img src="./icons/git.svg" alt="github icon" id="github-icon" class="hvr-grow" /></span>
     </div>
   </section>
 
-  <section class="projects container">
+  <section class="projects container" id="projects">
     <h2>Projetos</h2>
     <div class="project-card-container">
+
       <div class="project-card calmaria">
         <h3>Calmaria Spa</h3>
 
@@ -85,20 +104,43 @@
         <a href="https://newsletter-sign-up-with-success-mes.vercel.app/" target="https://newsletter-sign-up-with-success-mes.vercel.app/">Ver Site</a>
         <a href="https://github.com/M4R0C4/newsletter-sign-up-with-success-message-main" target="https://github.com/M4R0C4/newsletter-sign-up-with-success-message-main">Código Fonte</a>
       </div>
+
+    </div>
     </div>
   </section>
 
-  <section class="contact container">
+  <section class="contact container" id="contact">
     <h2>Vamos trabalhar juntos?</h2>
+
     <p>Me chame no LinkedIn ou veja mais projetos no meu GitHub!</p>
     <div class="links">
       <a href="https://www.linkedin.com/in/mariana-candido-20b59b88/" target="_blank">LinkedIn</a>
       <a href="https://github.com/M4R0C4" target="_blank">GitHub</a>
+    </div>
+    <div class="form-container">
+      <h2>Deixe um recado!</h2>
+      <form action="" class="form-email">
+        <div class="nome-container">
+          <label for="name" >Nome</label>
+          <input type="text" placeholder="Digite seu nome" id="name" />
+        </div>
+        <div class="email-container">
+          <label for="email">E-mail</label>
+          <input type="email" placeholder="Digite seu e-mail" id="email"/>
+        </div>
+        <div class="mensagem-container">
+          <label for="message">Mensagem</label>
+          <textarea placeholder="Digite sua mensagem" id="message"></textarea>
+        </div>
+        <button type="submit" id="submit">Enviar</button>
+      </form>
     </div>
   </section>
 
   <footer>
     <p>&copy; 2025 Mariana Cândido</p>
   </footer>
+  <script type="module" src="./src/swiper.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans&display=swap');
+@import url("./hover.css");
+@import url("./_carrossel.scss");
+$primary-color: #a26769; // terracota suave
+$secondary-color: #d5b9b2; // areia quente
+$accent-color: #9c9583; // oliva acinzentado
+$background-color: #fdf6f0; // bege claro
+$text-color: #3e3e3e;
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: $background-color;
+  color: $text-color;
+}
+
+
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+
+  .profile-pic {
+    border-radius: 50% 0 50% 0;
+    width: 200px;
+    height: 200px;
+    border: double 5px $text-color;
+    margin: 2rem;
+  }
+}
+
+.hero {
+  background-image: url('../img/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+
+  nav {
+    ul {
+      -webkit-backdrop-filter: blur(5px);
+      backdrop-filter: blur(5px);
+      list-style-type: none;
+      margin: 0;
+      padding: 1rem 0;
+
+      li {
+        display: inline-block;
+        margin-right: 1rem;
+
+        a {
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+          border-radius: 4rem;
+          padding: 1rem;
+        }
+      }
+    }
+  }
+
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+
+  .hero-content {
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+  }
+
+  .hero-content h1 {
+    overflow: hidden;
+    border-right: .15em solid $secondary-color;
+    white-space: nowrap;
+    margin: 0;
+    letter-spacing: 0;
+    animation: typing 3s steps(40, end), blink-caret .5s step-end infinite;
+
+    @keyframes typing {
+      from {
+        width: 0
+      }
+
+      to {
+        width: 100%
+      }
+    }
+
+    @keyframes blink-caret {
+
+      from,
+      to {
+        border-color: transparent
+      }
+
+      50% {
+        border-color: $secondary-color;
+      }
+
+    }
+  }
+
+  p {
+    font-size: 1.2rem;
+    font-style: italic;
+  }
+
+  h2 {
+    font-size: 1rem;
+    padding: 2rem 0;
+  }
+}
+
+.about {
+  padding: 4rem 2rem;
+
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    margin: 2rem 0;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+
+    span {
+      font-weight: bold;
+    }
+  }
+
+  .skills {
+    margin-top: 1rem;
+
+    span {
+      display: inline-flex;
+      background-color: $secondary-color;
+      color: $text-color;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      margin: 0.3rem;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+      flex-direction: column;
+      align-items: center;
+
+      #javascript-icon,
+      #json-icon,
+      #sass-icon,
+      #html-icon,
+      #github-icon {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
+
+.projects {
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .project-card-container {
+    .project-card {
+      background-color: white;
+      border: 1px solid $accent-color;
+      border-radius: 12px;
+      padding: 1rem 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+
+      h3 {
+        margin-top: 0;
+        color: $primary-color;
+      }
+
+      p {
+        margin: 0.5rem 0 1rem;
+      }
+
+      a {
+        display: inline-block;
+        margin-right: 1rem;
+        color: $primary-color;
+        text-decoration: none;
+        font-weight: bold;
+        border-bottom: 1px solid transparent;
+
+        &:hover {
+          border-color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+.form-container {
+  display: none;
+}
+
+.contact {
+  text-align: center;
+
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  .links a {
+    display: inline-block;
+    background-color: $primary-color;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    margin: 0.3rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: $accent-color;
+  color: white;
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    nav {
+      ul {
+        display: flex;
+        justify-content: center;
+
+        li {
+          margin: 0 1rem;
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .hero-content {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .about {
+    padding: 0;
+
+    .skills {
+      display: flex;
+      justify-content: center;
+      padding: 2rem;
+
+      span {
+        opacity: .7;
+      }
+
+      span:hover {
+        font-weight: bold;
+        opacity: 1;
+      }
+    }
+  }
+
+  .projects {
+    .project-card-container {
+      display: inline-flex;
+      gap: 4rem;
+      padding: 0 0 2rem 0;
+
+      .project-card {
+        position: relative;
+        left: 0;
+
+        &:not(:first-child) {
+          margin-left: -50px;
+        }
+
+        &:hover {
+          transform: translateY(-20px);
+        }
+
+        &:hover~.card {
+          left: 50px;
+        }
+      }
+    }
+  }
+
+  .contact {
+    .links a {
+      font-size: 1.2rem;
+    }
+
+    .form-container {
+      z-index: 2;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+
+      h2 {
+        font-size: 1.5rem;
+        margin: 2rem 0;
+      }
+
+      .form-container h2 {
+        overflow: hidden;
+        border-right: .15em solid $secondary-color;
+        white-space: nowrap;
+        margin: 0;
+        letter-spacing: 0;
+        animation: typing 3s steps(40, end), blink-caret .5s step-end infinite;
+
+        @keyframes typing {
+          from {
+            width: 0
+          }
+
+          to {
+            width: 100%
+          }
+        }
+
+        @keyframes blink-caret {
+
+          from,
+          to {
+            border-color: transparent
+          }
+
+          50% {
+            border-color: $secondary-color;
+          }
+
+        }
+      }
+
+      .form-email {
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: double 5px $text-color;
+        padding: 2rem;
+        border-radius: 20px;
+        margin: 0 0 2rem 0;
+        width: 50%;
+        gap: 1rem;
+
+        .nome-container,
+        .email-container,
+        .mensagem-container {
+          display: flex;
+          gap: 1rem;
+          width: 100%;
+        }
+
+        #name,
+        #email {
+          width: 80%;
+          border-radius: 20px;
+          border: #a26769 1px solid;
+        }
+        #message {
+          width: 70%;
+          height: 100%;
+          border-radius: 15px;
+          border: #a26769 1px solid;
+        }
+        #message,#name,#email::placeholder {
+          text-align: center;
+        }
+        #submit {
+          width: 30%;
+          background-color: $primary-color;
+          color: white;
+          padding: 0.6rem 1.2rem;
+          margin: 0.3rem;
+          border-radius: 6px;
+          border: none;
+          text-decoration: none;
+          font-weight: bold;
+          transition: background 0.3s ease;
+          cursor: pointer;
+
+          &:hover {
+            background-color: darken($primary-color, 10%);
+          }
+        }
+      }
+    }
+  }
+
+}

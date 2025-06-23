@@ -6,7 +6,7 @@
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
   overflow: hidden;
-  background: #a26769;
+  border: wheat 1px solid;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;
@@ -56,9 +56,10 @@
   transform: scale(1.1);
 }
 
-.nome {
+/* .nome {
   margin: 0 0.5rem;
 
-  animation: bounce; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 2s; /* don't forget to set a duration! */
-}
+  animation: bounce; 
+  animation-duration: 2s; 
+} */
+
