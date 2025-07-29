@@ -292,7 +292,8 @@ footer {
 
   .projects {
     .project-card-container {
-      display: inline-flex;
+      display: flex;
+      justify-content: center;
       gap: 4rem;
       padding: 0 0 2rem 0;
 
